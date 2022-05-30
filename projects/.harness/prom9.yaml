@@ -1,0 +1,13 @@
+connector:
+  name: prom9
+  identifier: prom9
+  description:
+  orgIdentifier: default
+  projectIdentifier: GitFt9
+  type: Artifactory
+  spec:
+    artifactoryServerUrl: temp.com
+    auth:
+      type: Anonymous
+    delegateSelectors:
+    - acctgroup

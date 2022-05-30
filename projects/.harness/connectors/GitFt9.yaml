@@ -1,0 +1,24 @@
+connector:
+  name: GitFt9
+  identifier: GitFt9
+  description:
+  orgIdentifier: default
+  projectIdentifier: GitFt9
+  type: Github
+  spec:
+    url: https://github.com/VikasChowdary/GitFt9
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: Vikas
+          tokenRef: account.patForGithub
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: account.patForGithub
+    delegateSelectors:
+    - acctgroup
+    executeOnDelegate: true
+    type: Repo
